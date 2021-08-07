@@ -1,6 +1,6 @@
 {
-  "name": "cesium",
-  "version": "1.84.0",
+  "name": "@georq/cesium",
+  "version": "1.84.0-g",
   "description": "CesiumJS is a JavaScript library for creating 3D globes and 2D maps in a web browser without a plugin.",
   "homepage": "http://cesium.com/cesiumjs/",
   "license": "Apache-2.0",
@@ -34,6 +34,7 @@
   "types": "./Source/Cesium.d.ts",
   "exports": {
     "./package.json": "./package.json",
+    "./Build/Cesium/Widgets/widgets.css": "./Build/Cesium/Widgets/widgets.css",
     ".": {
       "require": "./index.cjs",
       "import": "./Source/Cesium.js"
@@ -98,6 +99,7 @@
     }
   },
   "scripts": {
+    "artifactregistry-login": "npx google-artifactregistry-auth",
     "convertToModules": "gulp convertToModules",
     "start": "node server.cjs",
     "startPublic": "node server.cjs --public",
