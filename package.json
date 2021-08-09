@@ -32,14 +32,6 @@
   "main": "index.cjs",
   "module": "./Source/Cesium.js",
   "types": "./Source/Cesium.d.ts",
-  "exports": {
-    "./package.json": "./package.json",
-    "./Build/Cesium/Widgets/widgets.css": "./Build/Cesium/Widgets/widgets.css",
-    ".": {
-      "require": "./index.cjs",
-      "import": "./Source/Cesium.js"
-    }
-  },
   "type": "module",
   "devDependencies": {
     "aws-sdk": "^2.932.0",
