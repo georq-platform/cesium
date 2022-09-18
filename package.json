@@ -126,5 +126,8 @@
     "prettier": "prettier --write \"**/*\"",
     "prettier-check": "prettier --check \"**/*\"",
     "pretty-quick": "pretty-quick"
+  },
+  "dependencies": {
+    "internal-slot": "1.0.3"
   }
 }
